@@ -14,7 +14,7 @@ locals {
   tags = {
     Example    = local.name
     GithubRepo = "terraform-huawei-vpc"
-    GithubOrg  = "terraform-huawei-modules"
+    GithubOrg  = "artifactsystems"
   }
 
   # HuaweiCloud Network ACL rules (different structure than AWS)

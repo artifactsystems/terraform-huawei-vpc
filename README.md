@@ -6,7 +6,7 @@ Terraform module which creates VPC resources on HuaweiCloud.
 
 ```hcl
 module "vpc" {
-  source = "../.." # Adjust for your usage; see ./examples/* for references
+  source = "github.com/artifactsystems/terraform-huawei-vpc?ref=v1.0.0"
 
   name   = "my-vpc"
   region = "tr-west-1"

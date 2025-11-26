@@ -104,3 +104,9 @@ module "vpc" {
   create_vpc = false
 }
 ```
+
+## Contributing
+
+Report issues/questions/feature requests in the [issues](https://github.com/artifactsystems/terraform-huawei-vpc/issues/new) section.
+
+Full contributing [guidelines are covered here](.github/CONTRIBUTING.md).

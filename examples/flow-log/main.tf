@@ -59,4 +59,3 @@ module "disabled" {
 
   create_vpc = false
 }
-

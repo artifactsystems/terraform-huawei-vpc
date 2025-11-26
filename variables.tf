@@ -73,12 +73,6 @@ variable "enterprise_project_id" {
   default     = null
 }
 
-variable "enable_enhanced_local_route" {
-  description = "Whether to enable local route enhancement function. WARNING: It cannot be disabled once enabled. Default: `true`"
-  type        = bool
-  default     = true
-}
-
 # ────────────────────────────────────────────────────────────────────────────
 # SUBNETS
 # ────────────────────────────────────────────────────────────────────────────
@@ -179,12 +173,6 @@ variable "create_multiple_public_route_tables" {
   default     = false
 }
 
-variable "public_route_table_tags" {
-  description = "Additional tags for the public route tables"
-  type        = map(string)
-  default     = {}
-}
-
 variable "private_subnets" {
   description = "A list of private subnets inside the VPC"
   type        = list(string)
@@ -267,12 +255,6 @@ variable "private_subnet_dns_list" {
   description = "DNS server address list for private subnets. Use this if you need more than two DNS servers. This is superset of primary_dns and secondary_dns"
   type        = list(string)
   default     = []
-}
-
-variable "private_route_table_tags" {
-  description = "Additional tags for the private route tables"
-  type        = map(string)
-  default     = {}
 }
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -375,12 +357,6 @@ variable "database_subnet_tags" {
   default     = {}
 }
 
-variable "database_subnet_description" {
-  description = "Description of the database subnets"
-  type        = string
-  default     = ""
-}
-
 variable "database_subnet_dhcp_enable" {
   description = "Specifies whether DHCP is enabled for database subnets. Default: `true`"
   type        = bool
@@ -451,12 +427,6 @@ variable "create_database_nat_gateway_route" {
   description = "Controls if a nat gateway route should be created for database subnets to give internet access"
   type        = bool
   default     = false
-}
-
-variable "database_route_table_tags" {
-  description = "Additional tags for the database route tables"
-  type        = map(string)
-  default     = {}
 }
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -573,12 +543,6 @@ variable "create_multiple_intra_route_tables" {
   description = "Indicates whether to create a separate route table for each intra subnet"
   type        = bool
   default     = false
-}
-
-variable "intra_route_table_tags" {
-  description = "Additional tags for the intra route tables"
-  type        = map(string)
-  default     = {}
 }
 
 # ────────────────────────────────────────────────────────────────────────────

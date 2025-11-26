@@ -7,5 +7,3 @@ output "b_to_a_route_ids" {
   description = "IDs of routes created in VPC B toward destinations in VPC A."
   value       = { for k, r in huaweicloud_vpc_route.b_to_a : k => r.id }
 }
-
-

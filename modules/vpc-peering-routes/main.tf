@@ -33,5 +33,3 @@ resource "huaweicloud_vpc_route" "b_to_a" {
   nexthop        = var.peering_connection_id
   route_table_id = element(var.b_route_table_ids, each.value.route_table_index)
 }
-
-

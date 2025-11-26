@@ -46,5 +46,3 @@ No inputs.
 | Name | Description |
 |------|-------------|
 | address_group_ids | Map of created Address Group IDs |
-
-

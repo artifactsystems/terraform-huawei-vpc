@@ -55,5 +55,3 @@ No inputs.
 | public_subnet_flow_log_lts_group_ids | Map of public subnet IDs to their LTS group IDs |
 | database_subnet_flow_log_ids | Map of database subnet IDs to their flow log IDs |
 | database_subnet_flow_log_lts_group_ids | Map of database subnet IDs to their LTS group IDs |
-
-

@@ -48,5 +48,3 @@ variable "enable_routes_b_to_a" {
   type        = bool
   default     = true
 }
-
-

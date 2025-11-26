@@ -37,7 +37,7 @@ resource "huaweicloud_vpc" "this" {
   cidr                  = var.cidr
   secondary_cidrs       = var.secondary_cidr_blocks
   enterprise_project_id = var.enterprise_project_id
-  // enhanced_local_route  = var.enable_enhanced_local_route
+  # enhanced_local_route  = var.enable_enhanced_local_route
 
   tags = merge(
     { "Name" = var.name },

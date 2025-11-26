@@ -67,5 +67,3 @@ No inputs.
 | nat_ids | List of allocation IDs of EIPs created for NAT Gateway |
 | nat_public_ips | List of public EIPs created for NAT Gateway |
 | natgw_ids | List of NAT Gateway IDs |
-
-

@@ -77,4 +77,3 @@ output "natgw_ids" {
   description = "List of NAT Gateway IDs"
   value       = module.vpc.natgw_ids
 }
-

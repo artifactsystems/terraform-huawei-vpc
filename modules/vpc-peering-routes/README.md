@@ -72,5 +72,3 @@ No modules.
 
 - Same-tenant peering typically requires no explicit accept step; the peering connection ID can be used directly as the next hop.
 - For cross-tenant peering, manage requester with `huaweicloud_vpc_peering_connection` and accepter with `huaweicloud_vpc_peering_connection_accepter`.
-
-

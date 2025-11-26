@@ -59,5 +59,3 @@ No inputs.
 | public_network_acl_id | ID of the public network ACL |
 | private_network_acl_id | ID of the private network ACL |
 | database_network_acl_id | ID of the database network ACL |
-
-

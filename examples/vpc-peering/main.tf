@@ -16,10 +16,8 @@ locals {
   azs = slice(data.huaweicloud_availability_zones.available.names, 0, 2)
 
   # Subnets
-  vpc_a_public_subnets  = [for k, v in local.azs : cidrsubnet(local.vpc_a_cidr, 8, k + 4)]
   vpc_a_private_subnets = [for k, v in local.azs : cidrsubnet(local.vpc_a_cidr, 8, k)]
 
-  vpc_b_public_subnets  = [for k, v in local.azs : cidrsubnet(local.vpc_b_cidr, 8, k + 4)]
   vpc_b_private_subnets = [for k, v in local.azs : cidrsubnet(local.vpc_b_cidr, 8, k)]
 
   # Peering routes (A -> B, B -> A)
@@ -87,5 +85,3 @@ module "vpc_peering_routes" {
   enable_routes_a_to_b = true
   enable_routes_b_to_a = true
 }
-
-

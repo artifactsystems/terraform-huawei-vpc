@@ -56,5 +56,3 @@ No inputs.
 | private_subnets_cidr_blocks | List of CIDR blocks of private subnets |
 | public_subnets | List of IDs of public subnets |
 | public_subnets_cidr_blocks | List of CIDR blocks of public subnets |
-
-

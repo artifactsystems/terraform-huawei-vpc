@@ -65,5 +65,3 @@ No inputs.
 | intra_route_table_ids | List of IDs of intra route tables |
 | nat_ids | List of allocation IDs of EIPs created for NAT Gateway |
 | natgw_ids | List of NAT Gateway IDs |
-
-
